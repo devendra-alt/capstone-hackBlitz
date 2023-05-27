@@ -251,6 +251,9 @@ body {
 
 .featured-guests {
   color: $font-color;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   @include padding-left-right();
 
@@ -259,6 +262,33 @@ body {
 
     &::after {
       @include h5-level-heading-line();
+    }
+  }
+
+  .guests-list {
+    @include flex-center();
+
+    flex-direction: column;
+
+    .guest-card {
+      display: flex;
+      padding: 2.4rem;
+
+      .guest-image {
+        flex: 1;
+        background-color: #ec5242;
+
+        & > img {
+          max-width: 10rem;
+          max-height: 24rem;
+          width: 65%;
+          height: 90%;
+        }
+      }
+
+      .guest-details {
+        flex: 2;
+      }
     }
   }
 }
