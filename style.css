@@ -1,8 +1,172 @@
 /* Project Meta */
 
+/* primary color  */
+
 /* reset  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
 
 /* general */
+.hero {
+  background-image: url(assets/images/home-mobile.png);
+  background-size: cover;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #555;
+  background-color: #f7f7f7;
+}
+
+.content {
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.content .heading {
+  color: #ec5242;
+}
+
+.content .heading .sub-heading {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.content .heading .sub-heading::before {
+  content: '"';
+}
+
+.content .heading .sub-heading::after {
+  content: '"';
+}
+
+.content .heading .main-heading {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  background-image: url(assets/images/lines.jpg);
+  background-position: top right;
+  background-clip: initial;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.content .event-summary {
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 0.3rem solid #fff;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  margin-bottom: 1.5rem;
+}
+
+.content .event-data {
+  line-height: 1.5;
+}
+
+.content .event-data .event-date {
+  font-size: 2.2rem;
+}
+
+.content .event-data .event-venue {
+  font-size: 1.4rem;
+}
+
+.main-program {
+  background-color: #272a31;
+  background-image: url(assets/images/main-program.png);
+  padding: 1.6rem;
+  text-align: center;
+}
+
+.main-program .main-program-title {
+  color: #f7f7f7;
+  font-size: 2.2rem;
+}
+
+.main-program .main-program-title::after {
+  content: "____";
+  display: block;
+  color: #ec5242;
+}
+
+.main-program .main-program-list {
+  list-style: none;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.main-program .main-program-list .list-item {
+  background-color: #555;
+  color: #fff;
+  display: flex;
+  padding: 1.6rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.main-program .main-program-list .list-item:last-child {
+  margin-bottom: 0;
+}
+
+.main-program .main-program-list .list-item > * {
+  flex: 1;
+}
+
+.main-program .main-program-list .list-item > img {
+  width: 6.4rem;
+  height: 6.4rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.main-program .main-program-list .list-item > h5 {
+  font-size: 1.8rem;
+  color: #ec5242;
+  text-align: center;
+}
+
+.main-program .main-program-list .list-item > p {
+  font-size: 1.2rem;
+}
+
+.main-program .join-btn {
+  text-align: center;
+  background-color: #ec5242;
+  color: #f7f7f7;
+  padding: 2rem;
+  border: none;
+}
+
+.featured-guests {
+  color: #555;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.featured-guests .featured-guests-title {
+  font-size: 2.2rem;
+}
+
+.featured-guests .featured-guests-title::after {
+  content: "____";
+  display: block;
+  color: #ec5242;
+}
 
 /* typography */
 
