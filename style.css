@@ -14,15 +14,83 @@ html {
 }
 
 /* general */
+body {
+  font-family: "Lato", sans-serif;
+  color: #555;
+  background-color: #f7f7f7;
+}
+
 .hero {
   background-image: url(assets/images/home-mobile.png);
   background-size: cover;
 }
 
-body {
-  font-family: "Lato", sans-serif;
+.hero .header {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.hero .header .menu-i {
+  width: 4rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.hero .header .menu-i > svg {
+  stroke: #272a31;
+}
+
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 66%;
+  height: 0;
+  z-index: 10;
+  transition: 0.3s ease-in;
+  background-image: url(assets/images/Slide1.jpg);
+  background-size: cover;
+}
+
+.mobile-menu #menu-i-close {
+  stroke: #272a31;
+  width: 4rem;
+  height: 5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.mobile-menu > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+
+.mobile-menu > ul .mobile-menu-item .menu-link:link,
+.mobile-menu > ul .mobile-menu-item .menu-link:visited {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ec5242;
+  text-decoration: none;
+}
+
+.mobile-menu > ul .mobile-menu-item .menu-link:hover,
+.mobile-menu > ul .mobile-menu-item .menu-link:focus {
   color: #555;
-  background-color: #f7f7f7;
+  text-decoration-line: underline;
+  text-decoration-color: #ec5242;
+  text-decoration-thickness: 0.3rem;
+}
+
+.visibility {
+  height: 100vh;
 }
 
 .content {
