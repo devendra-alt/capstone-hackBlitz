@@ -222,6 +222,9 @@ body {
 
 .featured-guests {
   color: #555;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -234,6 +237,34 @@ body {
   content: "____";
   display: block;
   color: #ec5242;
+}
+
+.featured-guests .guests-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.featured-guests .guests-list .guest-card {
+  display: flex;
+  padding: 2.4rem;
+}
+
+.featured-guests .guests-list .guest-card .guest-image {
+  flex: 1;
+  background-color: #ec5242;
+}
+
+.featured-guests .guests-list .guest-card .guest-image > img {
+  max-width: 10rem;
+  max-height: 24rem;
+  width: 65%;
+  height: 90%;
+}
+
+.featured-guests .guests-list .guest-card .guest-details {
+  flex: 2;
 }
 
 /* typography */
