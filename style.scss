@@ -410,6 +410,30 @@ $partner-font-color: #8d8d8d;
   }
 }
 
+footer {
+  @include padding-left-right();
+  @include flex-center();
+
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .logo {
+    & > img {
+      width: 12.5rem;
+      height: 12.5rem;
+    }
+  }
+
+  .site-info {
+    .rights-reserve {
+      font-weight: bold;
+      padding-bottom: 0.5rem;
+    }
+  }
+}
+
 /* typography */
 
 /* grid */
@@ -423,4 +447,38 @@ $partner-font-color: #8d8d8d;
 /* Page template B */
 
 /* Media Queries */
+
+@media screen and (min-width: 768px) {
+  @mixin padding-right-left-desktop {
+    padding-right: 12rem;
+    padding-left: 12rem;
+  }
+
+  .hero {
+    background-image: url(assets/images/home-desktop.png);
+
+    @include padding-right-left-desktop();
+
+    .header {
+      .menu-i {
+        display: none;
+      }
+    }
+
+    .content {
+      width: 50%;
+
+      .heading {
+        .sub-heading {
+          font-size: 3.6rem;
+        }
+
+        .main-heading {
+          font-size: 6.3rem;
+        }
+      }
+    }
+  }
+}
+
 /* stylelint-enable no-descending-specificity */
