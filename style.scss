@@ -4,8 +4,8 @@
 
 $primary-color: #ec5242;
 $secondry-color: #272a31;
-$complimentry-color: #d3d3d3;
 $complimentry-color2: #f7f7f7;
+
 $font-color: #555555;
 
 /* reset  */
@@ -21,6 +21,11 @@ html {
 
 /* general */
 
+@mixin padding-left-right {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .hero {
   background-image: url(assets/images/home-mobile.png);
   background-size: cover;
@@ -33,61 +38,134 @@ body {
 }
 
 .content {
-  padding-left: 2rem;
-  padding-right: 2rem;
   padding-top: 10rem;
   padding-bottom: 7rem;
+  @include padding-left-right();
+  .heading {
+    color: $primary-color;
+    .sub-heading {
+      font-size: 2rem;
+      font-weight: 400;
+      &::before {
+        content: '"';
+      }
+      &::after {
+        content: '"';
+      }
+    }
+    .main-heading {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 3.4rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 3rem;
+      background-image: url(assets/images/lines.jpg);
+      background-position: top right;
+      background-clip: initial;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+  .event-summary {
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 0.3rem solid #fff;
+    padding: 1rem;
+    background-color: $complimentry-color2;
+    margin-bottom: 1.5rem;
+  }
+  .event-data {
+    line-height: 1.5;
+    .event-date {
+      font-size: 2.2rem;
+    }
+    .event-venue {
+      font-size: 1.4rem;
+    }
+  }
 }
 
-.heading {
+@mixin h5-level-heading {
+  font-size: 2.2rem;
+}
+
+@mixin h5-level-heading-line {
+  content: '____';
+  display: block;
   color: $primary-color;
 }
 
-.sub-heading {
-  font-size: 2rem;
-  font-weight: 400;
+.main-program {
+  background-color: $secondry-color;
+  background-image: url(assets/images/main-program.png);
+  padding: 1.6rem;
+  text-align: center;
+  .main-program-title {
+    color: $complimentry-color2;
+    @include h5-level-heading();
+    &::after {
+      @include h5-level-heading-line();
+    }
+  }
+  .main-program-list {
+    list-style: none;
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .list-item {
+      background-color: $font-color;
+      color: #fff;
+      display: flex;
+      padding: 1.6rem;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 1.6rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & > * {
+        flex: 1;
+      }
+
+      & > img {
+        width: 6.4rem;
+        height: 6.4rem;
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+
+      & > h5 {
+        font-size: 1.8rem;
+        color: $primary-color;
+        text-align: center;
+      }
+
+      & > p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .join-btn {
+    text-align: center;
+    background-color: $primary-color;
+    color: $complimentry-color2;
+    padding: 2rem;
+    border: none;
+  }
 }
 
-.sub-heading::before {
-  content: '"';
-}
-
-.sub-heading::after {
-  content: '"';
-}
-
-.main-heading {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 3.4rem;
-  text-transform: uppercase;
-  font-weight: 800;
-  margin-bottom: 3rem;
-  background-image: url(assets/images/lines.jpg);
-  background-position: top right;
-  background-clip: initial;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.event-summary {
-  font-size: 1.2rem;
-  font-weight: 400;
-  border: 0.3rem solid #fff;
-  padding: 1rem;
-  background-color: $complimentry-color2;
-  margin-bottom: 1.5rem;
-}
-
-.event-data {
-  line-height: 1.5;
-}
-
-.event-date {
-  font-size: 2.2rem;
-}
-.event-venue {
-  font-size: 1.4rem;
+.featured-guests {
+  color: $font-color;
+  @include padding-left-right();
+  .featured-guests-title {
+    @include h5-level-heading();
+    &::after {
+      @include h5-level-heading-line();
+    }
+  }
 }
 
 /* typography */
