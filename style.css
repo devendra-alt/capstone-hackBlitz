@@ -1,5 +1,7 @@
 /* Project Meta */
+
 /* primary color  */
+
 /* reset  */
 * {
   box-sizing: border-box;
@@ -19,7 +21,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  color: #555555;
+  color: #555;
   background-color: #f7f7f7;
 }
 
@@ -54,9 +56,11 @@ body {
   font-weight: 800;
   margin-bottom: 3rem;
   background-image: url(assets/images/lines.jpg);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-position: top right;
+  background-clip: initial;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .event-summary {
@@ -81,9 +85,15 @@ body {
 }
 
 /* typography */
+
 /* grid */
+
 /* header */
+
 /* footer */
+
 /* Page template A */
+
 /* Page template B */
-/* Media Queries *//*# sourceMappingURL=style.css.map */
+
+/* Media Queries */

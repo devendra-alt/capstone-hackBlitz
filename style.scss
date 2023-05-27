@@ -63,8 +63,11 @@ body {
   font-weight: 800;
   margin-bottom: 3rem;
   background-image: url(assets/images/lines.jpg);
-  background-clip: text;
+  background-position: top right;
+  background-clip: initial;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .event-summary {
