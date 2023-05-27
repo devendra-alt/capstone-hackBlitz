@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 /* Project Meta */
 
 /* primary color  */
@@ -185,6 +187,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 1.6rem;
+  gap: 2rem;
 }
 
 .main-program .main-program-list .list-item:last-child {
@@ -205,7 +208,7 @@ body {
 .main-program .main-program-list .list-item > h5 {
   font-size: 1.8rem;
   color: #ec5242;
-  text-align: center;
+  text-align: left;
 }
 
 .main-program .main-program-list .list-item > p {
@@ -249,22 +252,136 @@ body {
 .featured-guests .guests-list .guest-card {
   display: flex;
   padding: 2.4rem;
+  position: relative;
+  text-align: left;
+  gap: 2rem;
 }
 
 .featured-guests .guests-list .guest-card .guest-image {
   flex: 1;
-  background-color: #ec5242;
 }
 
 .featured-guests .guests-list .guest-card .guest-image > img {
-  max-width: 10rem;
-  max-height: 24rem;
-  width: 65%;
-  height: 90%;
+  width: 12.5rem;
+  height: 12.5rem;
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+  display: block;
 }
 
 .featured-guests .guests-list .guest-card .guest-details {
   flex: 2;
+}
+
+.featured-guests .guests-list .guest-card .guest-details .guest-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 0.4rem;
+}
+
+.featured-guests .guests-list .guest-card .guest-details .guest-designation {
+  font-size: 1.1rem;
+  color: #ec5242;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.featured-guests .guests-list .guest-card .guest-details .guest-designation::after {
+  content: "___";
+  display: block;
+  color: #555;
+  padding-bottom: 0.4rem;
+}
+
+.featured-guests .guests-list .guest-card .guest-details .guest-brif {
+  font-size: 1.2rem;
+}
+
+.featured-guests .mobile-more-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 3.4rem;
+  border: 0.1rem solid #555;
+  color: #555;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+}
+
+.featured-guests .mobile-more-btn > svg {
+  width: 2rem;
+  height: 2rem;
+  stroke: #ec5242;
+}
+
+.featured-guests .hide {
+  display: none;
+}
+
+.partners {
+  text-align: center;
+  color: #8d8d8d;
+  background-color: #555;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.partners .partners-title {
+  font-size: 2.2rem;
+}
+
+.partners .partners-title::after {
+  content: "____";
+  display: block;
+  color: #ec5242;
+}
+
+.partners .partner-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  gap: 2rem;
+}
+
+.partners .partner-list .partner {
+  font-size: 3.4rem;
+  cursor: pointer;
+}
+
+.partners .partner-list .partner:hover,
+.partners .partner-list .partner:focus {
+  color: #f7f7f7;
+}
+
+.partners .partner-list #mozila {
+  font-weight: 700;
+}
+
+.partners .partner-list #google {
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.partners .partner-list #naver {
+  font-weight: 900;
+}
+
+.partners .partner-list #daumkakao {
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+
+.partners .partner-list #airbnb {
+  font-weight: 400;
+  font-size: 2.8rem;
 }
 
 /* typography */
@@ -280,3 +397,4 @@ body {
 /* Page template B */
 
 /* Media Queries */
+/* stylelint-enable no-descending-specificity */
