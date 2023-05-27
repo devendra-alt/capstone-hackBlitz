@@ -384,6 +384,28 @@ body {
   font-size: 2.8rem;
 }
 
+footer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer .logo > img {
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+footer .site-info .rights-reserve {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
 /* typography */
 
 /* grid */
@@ -397,4 +419,27 @@ body {
 /* Page template B */
 
 /* Media Queries */
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(assets/images/home-desktop.png);
+    padding-right: 12rem;
+    padding-left: 12rem;
+  }
+
+  .hero .header .menu-i {
+    display: none;
+  }
+
+  .hero .content {
+    width: 50%;
+  }
+
+  .hero .content .heading .sub-heading {
+    font-size: 3.6rem;
+  }
+
+  .hero .content .heading .main-heading {
+    font-size: 6.3rem;
+  }
+}
 /* stylelint-enable no-descending-specificity */
