@@ -11,7 +11,6 @@ mobileMenuClose.addEventListener('click', () => {
 
 // guest cards
 
-const cardLimit = 2;
 let guestListData = [];
 
 const guestCard = (guest) => {
@@ -44,7 +43,7 @@ const loadFeaturedGuest = () => {
       guestListData = guestsList;
       const guestListParent = document.querySelector('.guests-list');
       let i = 0;
-      while (i < cardLimit) {
+      while (i < guestListData.length) {
         guestListParent.appendChild(guestCard(guestsList[i]));
         i += 1;
       }
@@ -55,10 +54,18 @@ loadFeaturedGuest();
 
 const moreBtn = document.querySelector('.mobile-more-btn');
 
-moreBtn.addEventListener('click', () => {
-  const guestListParent = document.querySelector('.guests-list');
-  for (let i = cardLimit; i < guestListData.length; i += 1) {
-    guestListParent.appendChild(guestCard(guestListData[i]));
-  }
+const mediaCreater = () => {
+  const parternsSection = document.querySelector('.partners');
+  const footerSection = document.querySelector('.footer');
+  const guestsList = document.querySelectorAll('.guest-card');
+  parternsSection.style.display = 'block';
+  footerSection.style.display = 'flex';
   moreBtn.classList.toggle('hide');
+  guestsList.forEach((el) => {
+    el.style.display = 'flex';
+  });
+};
+
+moreBtn.addEventListener('click', () => {
+  mediaCreater();
 });
