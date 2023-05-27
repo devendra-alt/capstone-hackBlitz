@@ -1,5 +1,13 @@
 /* Project Meta */
+
 /* primary color  */
+
+$primary-color: #ec5242;
+$secondry-color: #272a31;
+$complimentry-color: #d3d3d3;
+$complimentry-color2: #f7f7f7;
+$font-color: #555555;
+
 /* reset  */
 * {
   box-sizing: border-box;
@@ -12,15 +20,16 @@ html {
 }
 
 /* general */
+
 .hero {
   background-image: url(assets/images/home-mobile.png);
   background-size: cover;
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  color: #555555;
-  background-color: #f7f7f7;
+  font-family: 'Lato', sans-serif;
+  color: $font-color;
+  background-color: $complimentry-color2;
 }
 
 .content {
@@ -31,7 +40,7 @@ body {
 }
 
 .heading {
-  color: #ec5242;
+  color: $primary-color;
 }
 
 .sub-heading {
@@ -48,14 +57,13 @@ body {
 }
 
 .main-heading {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 3.4rem;
   text-transform: uppercase;
   font-weight: 800;
   margin-bottom: 3rem;
   background-image: url(assets/images/lines.jpg);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -64,7 +72,7 @@ body {
   font-weight: 400;
   border: 0.3rem solid #fff;
   padding: 1rem;
-  background-color: #f7f7f7;
+  background-color: $complimentry-color2;
   margin-bottom: 1.5rem;
 }
 
@@ -75,15 +83,20 @@ body {
 .event-date {
   font-size: 2.2rem;
 }
-
 .event-venue {
   font-size: 1.4rem;
 }
 
 /* typography */
+
 /* grid */
+
 /* header */
+
 /* footer */
+
 /* Page template A */
+
 /* Page template B */
-/* Media Queries *//*# sourceMappingURL=style.css.map */
+
+/* Media Queries */
