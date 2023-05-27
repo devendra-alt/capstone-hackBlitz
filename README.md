@@ -163,7 +163,7 @@ Example:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://devendra-alt.github.io/portfolio/)
+- [Live Demo Link](https://devendra-alt.github.io/capstone-hackBlitz/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
