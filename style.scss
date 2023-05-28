@@ -458,14 +458,25 @@ $partner-font-color: #8d8d8d;
 
 @media screen and (min-width: 768px) {
   @mixin padding-right-left-desktop {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 15rem;
+    padding-left: 15rem;
+  }
+
+  .sticky {
+    z-index: 100;
+    background-color: $complimentry-color2;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 0 5px 0.5px $font-color;
   }
 
   header {
     .desktop-menu-main {
       @include padding-right-left-desktop();
+      @include flex-center();
 
+      justify-content: space-between;
+      gap: 2rem;
       padding-top: 0.8rem;
       padding-bottom: 0.8rem;
 
@@ -473,17 +484,61 @@ $partner-font-color: #8d8d8d;
         & > img {
           width: 4.5rem;
           height: 4.5rem;
+          float: left;
+        }
+
+        .logo-title {
+          float: left;
+          margin-left: 1rem;
+          margin-top: 0.6rem;
+
+          .log-subtitle {
+            font-weight: 400;
+            color: $font-color;
+          }
+
+          .logo-main-title {
+            font-size: 1.8rem;
+          }
+        }
+
+        .clear {
+          clear: both;
         }
       }
 
       .desktop-menu {
+        @include flex-center();
+
         list-style: none;
+        gap: 5rem;
+
+        .desktop-menu-item {
+          & > * {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: $font-color;
+            font-weight: 400;
+          }
+        }
       }
+    }
+
+    .register-button {
+      border: 0.4rem solid $primary-color;
+      padding: 1rem;
+
+      @include padding-left-right();
+
+      color: $primary-color;
     }
   }
 
   .hero {
     background-image: url(assets/images/home-desktop.png);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 1px 0 5px 1px $partner-font-color inset;
 
     @include padding-right-left-desktop();
 

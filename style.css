@@ -425,9 +425,22 @@ body {
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
+  .sticky {
+    z-index: 100;
+    background-color: #f7f7f7;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 0 5px 0.5px #555;
+  }
+
   header .desktop-menu-main {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 15rem;
+    padding-left: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 2rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
   }
@@ -435,16 +448,58 @@ body {
   header .desktop-menu-main .logo > img {
     width: 4.5rem;
     height: 4.5rem;
+    float: left;
+  }
+
+  header .desktop-menu-main .logo .logo-title {
+    float: left;
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+  }
+
+  header .desktop-menu-main .logo .logo-title .log-subtitle {
+    font-weight: 400;
+    color: #555;
+  }
+
+  header .desktop-menu-main .logo .logo-title .logo-main-title {
+    font-size: 1.8rem;
+  }
+
+  header .desktop-menu-main .logo .clear {
+    clear: both;
   }
 
   header .desktop-menu-main .desktop-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     list-style: none;
+    gap: 5rem;
+  }
+
+  header .desktop-menu-main .desktop-menu .desktop-menu-item > * {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 400;
+  }
+
+  header .register-button {
+    border: 0.4rem solid #ec5242;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #ec5242;
   }
 
   .hero {
     background-image: url(assets/images/home-desktop.png);
-    padding-right: 10rem;
-    padding-left: 10rem;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 1px 0 5px 1px #8d8d8d inset;
+    padding-right: 15rem;
+    padding-left: 15rem;
   }
 
   .hero .header .menu-i {
@@ -478,8 +533,8 @@ body {
   }
 
   .main-program {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 15rem;
+    padding-left: 15rem;
   }
 
   .main-program .main-program-list {
@@ -497,8 +552,8 @@ body {
   }
 
   .featured-guests {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 15rem;
+    padding-left: 15rem;
   }
 
   .featured-guests .guests-list {
@@ -521,8 +576,8 @@ body {
   }
 
   .partners .partner-list {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 15rem;
+    padding-left: 15rem;
     flex-direction: row;
     justify-content: space-around;
   }
