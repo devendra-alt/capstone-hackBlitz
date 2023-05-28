@@ -433,8 +433,9 @@ body {
 #about-body .hero {
   background-color: #f7f7f7;
   background-image: url(assets/images/about1-2.png);
-  background-size: 75%;
+  background-size: 100%;
   background-repeat: no-repeat;
+  margin-bottom: 2rem;
 }
 
 #about-body .hero .content {
@@ -449,14 +450,16 @@ body {
 }
 
 #about-body .hero .event-summary {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding: 3rem;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  padding: 2.5rem;
 }
 
 #about-body .hero .reach-out {
-  padding-top: 4rem;
-  width: 80%;
+  padding-top: 3rem;
+  width: 90%;
   margin: 0 auto;
   font-size: 1.4rem;
 }
@@ -465,6 +468,139 @@ body {
   padding-top: 1rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+#about-body .logo-call-out {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#about-body .logo-call-out > h5 {
+  font-size: 2.2rem;
+}
+
+#about-body .logo-call-out > h5::after {
+  content: "____";
+  display: block;
+  color: #ec5242;
+}
+
+#about-body .logo-call-out > p {
+  font-size: 1.3rem;
+  padding: 3rem;
+}
+
+#about-body .logo-call-out .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+#about-body .logo-call-out .logo > img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+#about-body .logo-call-out .logo .logo-title {
+  margin-left: 1rem;
+  margin-top: 0.6rem;
+}
+
+#about-body .logo-call-out .logo .logo-title .log-subtitle {
+  font-weight: 400;
+  color: #555;
+}
+
+#about-body .logo-call-out .logo .logo-title .logo-main-title {
+  font-size: 1.8rem;
+}
+
+#about-body .past-events {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#about-body .past-events > h5 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+#about-body .past-events > h5::after {
+  content: "____";
+  display: block;
+  color: #ec5242;
+}
+
+#about-body .past-events > p {
+  font-size: 1.2rem;
+}
+
+#about-body .past-events .event-images {
+  padding-top: 2rem;
+}
+
+#about-body .past-events .event-images .img {
+  position: relative;
+  cursor: pointer;
+}
+
+#about-body .past-events .event-images .img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#about-body .past-events .event-images .img:nth-child(2) {
+  padding-top: 1.2rem;
+}
+
+#about-body .past-events .event-images .img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ec5242;
+  opacity: 0;
+  color: #fff;
+}
+
+#about-body .past-events .event-images .img .overlay > h5 {
+  margin-top: 25%;
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+}
+
+#about-body .past-events .event-images .img .overlay > p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#about-body .past-events .event-images .img:hover .overlay,
+#about-body .past-events .event-images .imgfocus .overlay {
+  opacity: 0.8;
+}
+
+#about-body .partners .partners-title {
+  margin-bottom: 2rem;
+}
+
+#about-body .partners .partner-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#about-body .footer {
+  flex-direction: row;
+}
+
+#about-body .footer .logo > img {
+  width: 9.4rem;
+  height: 8.2rem;
 }
 
 /* Media Queries */
@@ -641,6 +777,27 @@ body {
 
   .footer .site-info {
     width: 50%;
+  }
+
+  #about-body .hero .content .heading .sub-heading {
+    display: none;
+  }
+
+  #about-body .past-events .event-images {
+    display: flex;
+    gap: 1rem;
+  }
+
+  #about-body .past-events .event-images .img {
+    flex: 1;
+  }
+
+  #about-body .past-events .event-images .img:nth-child(2) {
+    padding-top: 0;
+  }
+
+  #about-body .footer {
+    background-color: #555;
   }
 }
 /* stylelint-enable no-descending-specificity */
