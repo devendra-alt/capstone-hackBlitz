@@ -40,6 +40,10 @@ body {
   justify-content: center;
 }
 
+#sticky-header {
+  display: none;
+}
+
 .hero {
   background-image: url(assets/images/home-mobile.png);
   background-size: cover;
@@ -452,7 +456,56 @@ $partner-font-color: #8d8d8d;
 
 /* Page template A */
 
-/* Page template B */
+/* About Page */
+
+@mixin textAliense-About {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#about-body {
+  text-align: center;
+
+  .hero {
+    background-color: $complimentry-color2;
+    background-image: url(assets/images/about1-2.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+
+    .content {
+      width: 100%;
+    }
+
+    .heading {
+      .main-heading {
+        color: $primary-color;
+        background-image: none;
+        background-clip: initial;
+        -webkit-text-fill-color: $primary-color;
+      }
+    }
+
+    .event-summary {
+      @include textAliense-About();
+
+      padding: 3rem;
+    }
+
+    .reach-out {
+      padding-top: 4rem;
+
+      @include textAliense-About();
+
+      font-size: 1.4rem;
+
+      &:last-child {
+        padding-top: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 /* Media Queries */
 
@@ -460,6 +513,10 @@ $partner-font-color: #8d8d8d;
   @mixin padding-right-left-desktop {
     padding-right: 15rem;
     padding-left: 15rem;
+  }
+
+  #sticky-header {
+    display: block;
   }
 
   .sticky {
