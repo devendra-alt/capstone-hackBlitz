@@ -22,6 +22,10 @@ body {
   background-color: #f7f7f7;
 }
 
+#sticky-header {
+  display: none;
+}
+
 .hero {
   background-image: url(assets/images/home-mobile.png);
   background-size: cover;
@@ -421,10 +425,54 @@ body {
 
 /* Page template A */
 
-/* Page template B */
+/* About Page */
+#about-body {
+  text-align: center;
+}
+
+#about-body .hero {
+  background-color: #f7f7f7;
+  background-image: url(assets/images/about1-2.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+#about-body .hero .content {
+  width: 100%;
+}
+
+#about-body .hero .heading .main-heading {
+  color: #ec5242;
+  background-image: none;
+  background-clip: initial;
+  -webkit-text-fill-color: #ec5242;
+}
+
+#about-body .hero .event-summary {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+#about-body .hero .reach-out {
+  padding-top: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+}
+
+#about-body .hero .reach-out:last-child {
+  padding-top: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
+  #sticky-header {
+    display: block;
+  }
+
   .sticky {
     z-index: 100;
     background-color: #f7f7f7;
