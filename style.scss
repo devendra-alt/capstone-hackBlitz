@@ -462,6 +462,26 @@ $partner-font-color: #8d8d8d;
     padding-left: 10rem;
   }
 
+  header {
+    .desktop-menu-main {
+      @include padding-right-left-desktop();
+
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+
+      .logo {
+        & > img {
+          width: 4.5rem;
+          height: 4.5rem;
+        }
+      }
+
+      .desktop-menu {
+        list-style: none;
+      }
+    }
+  }
+
   .hero {
     background-image: url(assets/images/home-desktop.png);
 
