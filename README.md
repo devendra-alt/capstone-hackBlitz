@@ -188,8 +188,7 @@ If you like this project please do follow me on social media mentiond above on A
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank <a href="https://www.microverse.org/">Microverse</a> to give me oportunity to work on this project
+Special thanks to <a href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015"> Cindy Shin in Behance </a> for the original design concept used in this project. The design is licensed under the Creative Commons License, and Cindy Shin's work served as a valuable inspiration for our project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
