@@ -595,7 +595,7 @@ $partner-font-color: #8d8d8d;
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: #ec5242;
+          background-color: #ec5342a2;
           opacity: 0;
           color: #fff;
 
@@ -675,6 +675,8 @@ $partner-font-color: #8d8d8d;
       padding-bottom: 0.8rem;
 
       .logo {
+        cursor: pointer;
+
         & > img {
           width: 4.5rem;
           height: 4.5rem;
@@ -713,18 +715,31 @@ $partner-font-color: #8d8d8d;
             font-size: 1.2rem;
             color: $font-color;
             font-weight: 400;
+
+            &:hover,
+            &:focus {
+              text-decoration: 0.3rem underline $primary-color;
+            }
+          }
+
+          .active {
+            color: $primary-color;
           }
         }
       }
     }
 
     .register-button {
+      cursor: pointer;
       border: 0.4rem solid $primary-color;
       padding: 1rem;
 
       @include padding-left-right();
 
-      color: $primary-color;
+      &:hover,
+      &:active {
+        color: $primary-color;
+      }
     }
   }
 
@@ -783,10 +798,15 @@ $partner-font-color: #8d8d8d;
       gap: 1rem;
 
       .list-item {
+        cursor: pointer;
         flex: 1;
         flex-direction: column;
         padding: 2rem;
         margin: 0;
+
+        &:hover {
+          transform: scale(1.01);
+        }
       }
     }
   }
@@ -866,8 +886,13 @@ $partner-font-color: #8d8d8d;
       }
     }
 
+    #partners-section {
+      display: block;
+    }
+
     .footer {
       background-color: $font-color;
+      display: block;
     }
   }
 }

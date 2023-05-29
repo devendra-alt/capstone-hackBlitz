@@ -21,7 +21,7 @@
   <body id="about-body">
     <header id="sticky-header">
       <div class="desktop-menu-main">
-        <div class="logo">
+        <div class="logo" onclick="home('index.html')">
           <img src="assets/images/logo.png" alt="site logo" />
           <div class="logo-title">
             <p class="logo-subtitle">IGNITE INNOVATION!</p>
@@ -31,7 +31,7 @@
         </div>
         <nav class="desktop-menu">
           <li class="desktop-menu-item">
-            <a href="about.html" class="dekstop-menu-link">About</a>
+            <a href="about.html" class="dekstop-menu-link active">About</a>
           </li>
           <li class="desktop-menu-item">
             <a href="#" class="dekstop-menu-link">Schedule</a>
@@ -177,7 +177,7 @@
         </div>
       </div>
     </section>
-    <section class="partners">
+    <section class="partners" id="partners-section">
       <h5 class="partners-title">Partner</h5>
       <ul class="partner-list">
         <li class="partner" id="mozila">mozila</li>
