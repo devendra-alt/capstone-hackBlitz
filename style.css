@@ -272,6 +272,7 @@ body {
 
 .featured-guests .guests-list .guest-card .guest-image {
   flex: 1;
+  position: relative;
 }
 
 .featured-guests .guests-list .guest-card .guest-image > img {
@@ -281,6 +282,20 @@ body {
   max-height: 100%;
   background-size: cover;
   display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.featured-guests .guests-list .guest-card .guest-image::after {
+  content: "";
+  background-image: url(assets/images/check.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  top: -7%;
+  left: -7%;
+  z-index: -1;
 }
 
 .featured-guests .guests-list .guest-card .guest-details {
@@ -401,11 +416,20 @@ body {
 }
 
 .partners .partner-list #airbnb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 2.8rem;
 }
 
-.footer {
+.partners .partner-list #airbnb > svg {
+  width: 3.4rem;
+  height: 3.4rem;
+  color: #8d8d8d;
+}
+
+footer {
   display: none;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -417,12 +441,12 @@ body {
   padding-bottom: 2rem;
 }
 
-.footer .logo > img {
+footer .logo > img {
   width: 12.5rem;
   height: 12.5rem;
 }
 
-.footer .site-info .rights-reserve {
+footer .site-info .rights-reserve {
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
@@ -599,6 +623,10 @@ body {
 #about-body .past-events .event-images .img:hover .overlay,
 #about-body .past-events .event-images .imgfocus .overlay {
   opacity: 0.8;
+}
+
+#about-body .partners {
+  display: block;
 }
 
 #about-body .partners .partners-title {
@@ -791,6 +819,18 @@ body {
     display: flex;
   }
 
+  .featured-guests .guests-list .guest-card .guest-image::after {
+    content: "";
+    background-image: url(assets/images/checker2.jpg);
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-repeat: no-repeat;
+    top: -7%;
+    left: -7%;
+    z-index: -1;
+  }
+
   .featured-guests .mobile-more-btn {
     display: none;
   }
@@ -802,17 +842,22 @@ body {
     justify-content: space-around;
   }
 
-  .footer {
+  footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 15rem;
+    padding-left: 15rem;
     flex-direction: row;
-    gap: 3rem;
     font-size: 1.2rem;
   }
 
-  .footer .site-info {
-    width: 50%;
+  footer .logo {
+    text-align: center;
+  }
+
+  footer > * {
+    flex: 1;
   }
 
   #about-body .hero .content .heading .sub-heading {
@@ -854,9 +899,13 @@ body {
   }
 
   #about-body .footer {
+    padding-right: 15rem;
+    padding-left: 15rem;
     background-color: #272a31;
     color: #a5a5a5;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: left;
   }
 }

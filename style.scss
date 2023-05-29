@@ -303,6 +303,21 @@ body {
           max-height: 100%;
           background-size: cover;
           display: block;
+          object-fit: cover;
+        }
+
+        position: relative;
+
+        &::after {
+          content: '';
+          background-image: url(assets/images/check.png);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          top: -7%;
+          left: -7%;
+          z-index: -1;
         }
       }
 
@@ -426,13 +441,21 @@ $partner-font-color: #8d8d8d;
     }
 
     #airbnb {
+      @include flex-center();
+
       font-weight: 400;
       font-size: 2.8rem;
+
+      & > svg {
+        width: 3.4rem;
+        height: 3.4rem;
+        color: $partner-font-color;
+      }
     }
   }
 }
 
-.footer {
+footer {
   display: none;
 
   @include padding-left-right();
@@ -639,6 +662,8 @@ $partner-font-color: #8d8d8d;
   }
 
   .partners {
+    display: block;
+
     .partners-title {
       margin-bottom: 2rem;
     }
@@ -841,6 +866,20 @@ $partner-font-color: #8d8d8d;
 
       .guest-card {
         display: flex;
+
+        .guest-image {
+          &::after {
+            content: '';
+            background-image: url(assets/images/checker2.jpg);
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            background-repeat: no-repeat;
+            top: -7%;
+            left: -7%;
+            z-index: -1;
+          }
+        }
       }
     }
 
@@ -858,18 +897,18 @@ $partner-font-color: #8d8d8d;
     }
   }
 
-  .footer {
+  footer {
     @include flex-center();
+    @include padding-right-left-desktop();
 
     flex-direction: row;
-    gap: 3rem;
     font-size: 1.2rem;
 
-    .site-info {
-      width: 50%;
+    .logo {
+      text-align: center;
     }
 
-    & > {
+    & > * {
       flex: 1;
     }
   }
@@ -920,9 +959,13 @@ $partner-font-color: #8d8d8d;
     }
 
     .footer {
+      @include padding-right-left-desktop();
+
       background-color: $secondry-color;
       color: #a5a5a5;
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: left;
     }
   }

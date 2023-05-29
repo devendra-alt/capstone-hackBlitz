@@ -70,6 +70,8 @@ moreBtn.addEventListener('click', () => {
   mediaCreater();
 });
 
+mediaCreater();
+
 // sticky header
 
 const header = document.getElementById('sticky-header');
