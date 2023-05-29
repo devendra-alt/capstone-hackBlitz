@@ -9,10 +9,14 @@ mobileMenuClose.addEventListener('click', () => {
 });
 
 const mediaCreater = () => {
-  const parternsSection = document.querySelector('.partners');
   const footerSection = document.querySelector('.footer');
-  parternsSection.style.display = 'block';
   footerSection.style.display = 'flex';
 };
 
 mediaCreater();
+
+function home(url) {
+  if (url) window.location.href = url;
+}
+
+home(null);

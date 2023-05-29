@@ -19,10 +19,10 @@
     />
   </head>
   <body id="about-body">
-    <header id="sticky-header">
+    <header id="sticky-header" aria-label="site header">
       <div class="desktop-menu-main">
-        <div class="logo">
-          <img src="assets/images/logo.png" alt="site logo" />
+        <div class="logo" onclick="home('index.html')">
+          <img src="assets/images/logo.png" alt="Hackathon logo" />
           <div class="logo-title">
             <p class="logo-subtitle">IGNITE INNOVATION!</p>
             <p class="logo-main-title">HackBlitz:2023</p>
@@ -31,7 +31,7 @@
         </div>
         <nav class="desktop-menu">
           <li class="desktop-menu-item">
-            <a href="about.html" class="dekstop-menu-link">About</a>
+            <a href="about.html" class="dekstop-menu-link active">About</a>
           </li>
           <li class="desktop-menu-item">
             <a href="#" class="dekstop-menu-link">Schedule</a>
@@ -46,10 +46,10 @@
             <a href="#" class="dekstop-menu-link">Resources</a>
           </li>
         </nav>
-        <button class="register-button">Register</button>
+        <button class="register-button" type="submit">Register</button>
       </div>
     </header>
-    <section class="hero">
+    <section class="hero" aria-label="hero section">
       <header class="header">
         <div class="menu-i">
           <svg
@@ -86,25 +86,25 @@
 
           <ul>
             <li class="mobile-menu-item">
-              <a href="" class="menu-link">About</a>
+              <a href="#" class="menu-link">About</a>
             </li>
             <li class="mobile-menu-item">
-              <a href="" class="menu-link">Schedule</a>
+              <a href="#" class="menu-link">Schedule</a>
             </li>
             <li class="mobile-menu-item">
-              <a href="" class="menu-link">Speakers</a>
+              <a href="#" class="menu-link">Speakers</a>
             </li>
             <li class="mobile-menu-item">
-              <a href="" class="menu-link">Sponsors</a>
+              <a href="#" class="menu-link">Sponsors</a>
             </li>
             <li class="mobile-menu-item">
-              <a href="" class="menu-link">Resources</a>
+              <a href="#" class="menu-link">Resources</a>
             </li>
           </ul>
         </nav>
       </header>
       <div class="content">
-        <div class="heading">
+        <div class="heading" onclick="home('index.html')">
           <h2 class="sub-heading">Ignite. Innovate. Collaborate. Conquer.</h2>
           <h1 class="main-heading">HackBlitz 2023: Ignite Innovation!</h1>
         </div>
@@ -127,17 +127,17 @@
         <p class="reach-out">info@hackblitz.com</p>
       </div>
     </section>
-    <section class="logo-call-out">
+    <section class="logo-call-out" aria-label="logo-call-out section">
       <h5>HackBlitz Hackathon 2023 Logo</h5>
       <p>
         As Devendra-Alt, I had the privilege of designing the captivating
         HackBlitz You can explore my project @
-        <a href="https://github.com/devendra-alt" target="_blank"
+        <a href="https://github.com/devendra-alt" target="_blank" rel="noopener"
           >devendra-alt</a
         >.
       </p>
       <div class="logo">
-        <img src="assets/images/logo.png" alt="site logo" />
+        <img src="assets/images/logo.png" alt="Hackathon logo" />
         <div class="logo-title">
           <p class="logo-subtitle">IGNITE INNOVATION!</p>
           <p class="logo-main-title">HackBlitz:2023</p>
@@ -156,7 +156,7 @@
             src="assets/images/hackathon-p1.jpeg"
             height="300"
             width="240"
-            alt=""
+            alt="NewYork hackathon image"
           />
           <div class="overlay">
             <h5>2019</h5>
@@ -168,7 +168,7 @@
             src="assets/images/hackathon-p2.jpeg"
             height="300"
             width="240"
-            alt=""
+            alt="Tokeyo hackathon image"
           />
           <div class="overlay">
             <h5>2018</h5>
@@ -177,7 +177,11 @@
         </div>
       </div>
     </section>
-    <section class="partners">
+    <section
+      class="partners"
+      id="partners-section"
+      aria-label="partners section"
+    >
       <h5 class="partners-title">Partner</h5>
       <ul class="partner-list">
         <li class="partner" id="mozila">mozila</li>
@@ -189,7 +193,7 @@
     </section>
     <footer class="footer">
       <div class="logo">
-        <img src="/assets/images/logo.png" alt="" />
+        <img src="/assets/images/logo.png" alt="hackblitz logo" />
       </div>
       <div class="site-info">
         <p class="rights-reserve">© 2023 HackBlitz. All rights reserved.</p>

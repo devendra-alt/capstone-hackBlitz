@@ -253,6 +253,14 @@ body {
     color: $complimentry-color2;
     padding: 2rem;
     border: none;
+    cursor: pointer;
+    transition: all 0.6s ease-in;
+
+    &:hover {
+      color: $primary-color;
+      border: 0.4rem solid $primary-color;
+      background-color: $complimentry-color2;
+    }
   }
 }
 
@@ -295,6 +303,21 @@ body {
           max-height: 100%;
           background-size: cover;
           display: block;
+          object-fit: cover;
+        }
+
+        position: relative;
+
+        &::after {
+          content: '';
+          background-image: url(assets/images/check.png);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          top: -7%;
+          left: -7%;
+          z-index: -1;
         }
       }
 
@@ -380,9 +403,12 @@ $partner-font-color: #8d8d8d;
   }
 
   .partner-list {
+    padding-top: 1rem;
+
     @include flex-center();
 
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
     gap: 2rem;
 
@@ -415,18 +441,28 @@ $partner-font-color: #8d8d8d;
     }
 
     #airbnb {
+      @include flex-center();
+
       font-weight: 400;
       font-size: 2.8rem;
+
+      & > svg {
+        width: 3.4rem;
+        height: 3.4rem;
+        color: $partner-font-color;
+      }
     }
   }
 }
 
-.footer {
+footer {
   display: none;
 
   @include padding-left-right();
 
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -478,6 +514,8 @@ $partner-font-color: #8d8d8d;
     }
 
     .heading {
+      cursor: pointer;
+
       .main-heading {
         color: $primary-color;
         background-image: none;
@@ -595,7 +633,7 @@ $partner-font-color: #8d8d8d;
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: #ec5242;
+          background-color: #ec5342a2;
           opacity: 0;
           color: #fff;
 
@@ -624,6 +662,8 @@ $partner-font-color: #8d8d8d;
   }
 
   .partners {
+    display: block;
+
     .partners-title {
       margin-bottom: 2rem;
     }
@@ -675,6 +715,8 @@ $partner-font-color: #8d8d8d;
       padding-bottom: 0.8rem;
 
       .logo {
+        cursor: pointer;
+
         & > img {
           width: 4.5rem;
           height: 4.5rem;
@@ -713,18 +755,31 @@ $partner-font-color: #8d8d8d;
             font-size: 1.2rem;
             color: $font-color;
             font-weight: 400;
+
+            &:hover,
+            &:focus {
+              text-decoration: 0.3rem underline $primary-color;
+            }
+          }
+
+          .active {
+            color: $primary-color;
           }
         }
       }
     }
 
     .register-button {
+      cursor: pointer;
       border: 0.4rem solid $primary-color;
       padding: 1rem;
 
       @include padding-left-right();
 
-      color: $primary-color;
+      &:hover,
+      &:active {
+        color: $primary-color;
+      }
     }
   }
 
@@ -732,7 +787,8 @@ $partner-font-color: #8d8d8d;
     background-image: url(assets/images/home-desktop.png);
     background-size: cover;
     background-position: center center;
-    box-shadow: 1px 0 5px 1px $partner-font-color inset;
+    // box-shadow: 1px 0 5px 1px $partner-font-color inset;
+    box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.5);
 
     @include padding-right-left-desktop();
 
@@ -783,10 +839,15 @@ $partner-font-color: #8d8d8d;
       gap: 1rem;
 
       .list-item {
+        cursor: pointer;
         flex: 1;
         flex-direction: column;
         padding: 2rem;
         margin: 0;
+
+        &:hover {
+          transform: scale(1.01);
+        }
       }
     }
   }
@@ -805,6 +866,20 @@ $partner-font-color: #8d8d8d;
 
       .guest-card {
         display: flex;
+
+        .guest-image {
+          &::after {
+            content: '';
+            background-image: url(assets/images/checker2.jpg);
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            background-repeat: no-repeat;
+            top: -7%;
+            left: -7%;
+            z-index: -1;
+          }
+        }
       }
     }
 
@@ -814,8 +889,6 @@ $partner-font-color: #8d8d8d;
   }
 
   .partners {
-    display: block;
-
     .partner-list {
       @include padding-right-left-desktop();
 
@@ -824,18 +897,18 @@ $partner-font-color: #8d8d8d;
     }
   }
 
-  .footer {
+  footer {
     @include flex-center();
+    @include padding-right-left-desktop();
 
     flex-direction: row;
-    gap: 3rem;
     font-size: 1.2rem;
 
-    .site-info {
-      width: 50%;
+    .logo {
+      text-align: center;
     }
 
-    & > {
+    & > * {
       flex: 1;
     }
   }
@@ -851,7 +924,22 @@ $partner-font-color: #8d8d8d;
       }
     }
 
+    .logo-call-out {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+
+      .logo {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 60%;
+        margin: auto;
+      }
+    }
+
     .past-events {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+
       .event-images {
         display: flex;
         gap: 1rem;
@@ -866,8 +954,19 @@ $partner-font-color: #8d8d8d;
       }
     }
 
+    #partners-section {
+      display: none;
+    }
+
     .footer {
-      background-color: $font-color;
+      @include padding-right-left-desktop();
+
+      background-color: $secondry-color;
+      color: #a5a5a5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
     }
   }
 }
