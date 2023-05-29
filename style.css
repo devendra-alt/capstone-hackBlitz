@@ -225,6 +225,14 @@ body {
   color: #f7f7f7;
   padding: 2rem;
   border: none;
+  cursor: pointer;
+  transition: all 0.6s ease-in;
+}
+
+.main-program .join-btn:hover {
+  color: #ec5242;
+  border: 0.4rem solid #ec5242;
+  background-color: #f7f7f7;
 }
 
 .featured-guests {
@@ -354,10 +362,12 @@ body {
 }
 
 .partners .partner-list {
+  padding-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   gap: 2rem;
 }
@@ -399,7 +409,9 @@ body {
   display: none;
   padding-left: 2rem;
   padding-right: 2rem;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -440,6 +452,10 @@ body {
 
 #about-body .hero .content {
   width: 100%;
+}
+
+#about-body .hero .heading {
+  cursor: pointer;
 }
 
 #about-body .hero .heading .main-heading {
@@ -700,7 +716,7 @@ body {
     background-image: url(assets/images/home-desktop.png);
     background-size: cover;
     background-position: center center;
-    box-shadow: 1px 0 5px 1px #8d8d8d inset;
+    box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.5);
     padding-right: 15rem;
     padding-left: 15rem;
   }
@@ -779,10 +795,6 @@ body {
     display: none;
   }
 
-  .partners {
-    display: block;
-  }
-
   .partners .partner-list {
     padding-right: 15rem;
     padding-left: 15rem;
@@ -807,6 +819,23 @@ body {
     display: none;
   }
 
+  #about-body .logo-call-out {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  #about-body .logo-call-out .logo {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 60%;
+    margin: auto;
+  }
+
+  #about-body .past-events {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   #about-body .past-events .event-images {
     display: flex;
     gap: 1rem;
@@ -821,12 +850,14 @@ body {
   }
 
   #about-body #partners-section {
-    display: block;
+    display: none;
   }
 
   #about-body .footer {
-    background-color: #555;
+    background-color: #272a31;
+    color: #a5a5a5;
     display: block;
+    text-align: left;
   }
 }
 /* stylelint-enable no-descending-specificity */

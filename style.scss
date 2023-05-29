@@ -253,6 +253,14 @@ body {
     color: $complimentry-color2;
     padding: 2rem;
     border: none;
+    cursor: pointer;
+    transition: all 0.6s ease-in;
+
+    &:hover {
+      color: $primary-color;
+      border: 0.4rem solid $primary-color;
+      background-color: $complimentry-color2;
+    }
   }
 }
 
@@ -380,9 +388,12 @@ $partner-font-color: #8d8d8d;
   }
 
   .partner-list {
+    padding-top: 1rem;
+
     @include flex-center();
 
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
     gap: 2rem;
 
@@ -426,7 +437,9 @@ $partner-font-color: #8d8d8d;
 
   @include padding-left-right();
 
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -478,6 +491,8 @@ $partner-font-color: #8d8d8d;
     }
 
     .heading {
+      cursor: pointer;
+
       .main-heading {
         color: $primary-color;
         background-image: none;
@@ -747,7 +762,8 @@ $partner-font-color: #8d8d8d;
     background-image: url(assets/images/home-desktop.png);
     background-size: cover;
     background-position: center center;
-    box-shadow: 1px 0 5px 1px $partner-font-color inset;
+    // box-shadow: 1px 0 5px 1px $partner-font-color inset;
+    box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.5);
 
     @include padding-right-left-desktop();
 
@@ -834,8 +850,6 @@ $partner-font-color: #8d8d8d;
   }
 
   .partners {
-    display: block;
-
     .partner-list {
       @include padding-right-left-desktop();
 
@@ -871,7 +885,22 @@ $partner-font-color: #8d8d8d;
       }
     }
 
+    .logo-call-out {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+
+      .logo {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 60%;
+        margin: auto;
+      }
+    }
+
     .past-events {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+
       .event-images {
         display: flex;
         gap: 1rem;
@@ -887,12 +916,14 @@ $partner-font-color: #8d8d8d;
     }
 
     #partners-section {
-      display: block;
+      display: none;
     }
 
     .footer {
-      background-color: $font-color;
+      background-color: $secondry-color;
+      color: #a5a5a5;
       display: block;
+      text-align: left;
     }
   }
 }
