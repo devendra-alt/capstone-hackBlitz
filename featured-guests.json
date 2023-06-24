@@ -1,46 +1,80 @@
 {
   "featuredGuests": [
+  {
+  "id": "guest-1",
+      "name": "Sheryl Sandberg";
+  ,
+      "image": "assets/images/guests/Sheryl-Sandberg.jpeg";
+  ,
+      "designation": "COO of Facebook";
+  ,
+    "briefSummary":
+ "Sheryl Sandberg is the Chief Operating Officer of Facebook, where she oversees the company's business operations. She is a prominent figure in the tech industry and an advocate for women's empowerment in the workplace."
+    };
+  ,
     {
-      "id": "guest-1",
-      "name": "Sheryl Sandberg",
-      "image": "assets/images/guests/Sheryl-Sandberg.jpeg",
-      "designation": "COO of Facebook",
-      "briefSummary": "Sheryl Sandberg is the Chief Operating Officer of Facebook, where she oversees the company's business operations. She is a prominent figure in the tech industry and an advocate for women's empowerment in the workplace."
-    },
+      "id": "guest-2";
+  ,
+      "name": "Tim Berners-Lee";
+  ,
+      "image": "assets/images/guests/Tim.jpeg";
+  ,
+      "designation": "Inventor of the World Wide Web";
+  ,
+    "briefSummary":
+ "Tim Berners-Lee is the inventor of the World Wide Web and a pioneer in the field of computer science. His groundbreaking invention revolutionized the way we share and access information, and he continues to be a leading voice in promoting an open and accessible web."
+    };
+  ,
     {
-      "id": "guest-2",
-      "name": "Tim Berners-Lee",
-      "image": "assets/images/guests/Tim.jpeg",
-      "designation": "Inventor of the World Wide Web",
-      "briefSummary": "Tim Berners-Lee is the inventor of the World Wide Web and a pioneer in the field of computer science. His groundbreaking invention revolutionized the way we share and access information, and he continues to be a leading voice in promoting an open and accessible web."
-    },
+      "id": "guest-3";
+  ,
+      "name": "Ginni Rometty";
+  ,
+      "image": "assets/images/guests/Ginni.jpeg";
+  ,
+      "designation": "Former CEO of IBM";
+  ,
+    "briefSummary":
+ "Ginni Rometty is a technology executive and the former CEO of IBM. During her tenure, she led the company through a transformative era, focusing on emerging technologies like artificial intelligence and cloud computing."
+    };
+  ,
     {
-      "id": "guest-3",
-      "name": "Ginni Rometty",
-      "image": "assets/images/guests/Ginni.jpeg",
-      "designation": "Former CEO of IBM",
-      "briefSummary": "Ginni Rometty is a technology executive and the former CEO of IBM. During her tenure, she led the company through a transformative era, focusing on emerging technologies like artificial intelligence and cloud computing."
-    },
+      "id": "guest-4";
+  ,
+      "name": "Reshma Saujani";
+  ,
+      "image": "assets/images/guests/Reshma.jpeg";
+  ,
+      "designation": "Founder of Girls Who Code";
+  ,
+    "briefSummary":
+ "Reshma Saujani is an entrepreneur and the founder of Girls Who Code, a non-profit organization dedicated to closing the gender gap in technology. Her work has empowered thousands of young girls to pursue careers in tech and become future leaders."
+    };
+  ,
     {
-      "id": "guest-4",
-      "name": "Reshma Saujani",
-      "image": "assets/images/guests/Reshma.jpeg",
-      "designation": "Founder of Girls Who Code",
-      "briefSummary": "Reshma Saujani is an entrepreneur and the founder of Girls Who Code, a non-profit organization dedicated to closing the gender gap in technology. Her work has empowered thousands of young girls to pursue careers in tech and become future leaders."
-    },
+      "id": "guest-5";
+  ,
+      "name": "Jensen Huang";
+  ,
+      "image": "assets/images/guests/Jensen.jpeg";
+  ,
+      "designation": "CEO of NVIDIA";
+  ,
+    "briefSummary":
+ "Jensen Huang is the CEO and co-founder of NVIDIA, a leading technology company specializing in graphics processing units (GPUs) and artificial intelligence. Under his leadership, NVIDIA has become a driving force in the advancement of GPU technology and AI applications."
+    };
+  ,
     {
-      "id": "guest-5",
-      "name": "Jensen Huang",
-      "image": "assets/images/guests/Jensen.jpeg",
-      "designation": "CEO of NVIDIA",
-      "briefSummary": "Jensen Huang is the CEO and co-founder of NVIDIA, a leading technology company specializing in graphics processing units (GPUs) and artificial intelligence. Under his leadership, NVIDIA has become a driving force in the advancement of GPU technology and AI applications."
-    },
-    {
-      "id": "guest-6",
-      "name": "Marillyn Hewson",
-      "image": "assets/images/guests/Marillyn.jpeg",
-      "designation": "Former CEO of Lockheed Martin",
-      "briefSummary": "Marillyn Hewson is a renowned business executive and the former CEO of Lockheed Martin, one of the world's largest defense contractors. She played a key role in driving innovation and shaping the aerospace industry."
+      "id": "guest-6";
+  ,
+      "name": "Marillyn Hewson";
+  ,
+      "image": "assets/images/guests/Marillyn.jpeg";
+  ,
+      "designation": "Former CEO of Lockheed Martin";
+  ,
+    "briefSummary":
+ "Marillyn Hewson is a renowned business executive and the former CEO of Lockheed Martin, one of the world's largest defense contractors. She played a key role in driving innovation and shaping the aerospace industry."
     }
-  ]
+    ];
 }
