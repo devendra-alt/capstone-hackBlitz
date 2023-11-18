@@ -786,7 +786,6 @@ footer .site-info .rights-reserve {
 
   .main-program .main-program-list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
   }
